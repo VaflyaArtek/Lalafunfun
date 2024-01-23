@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --loader-background: #000;
+    --loader-background-circle: rgba(230, 132, 255, 0.568);
+    --background: url(../img/background.jpg);
+    --main-color: #d742fc;
+    --title-color: #d742fc;
+    --clr-neon: #d742fc;
+    --clr-bg: hsl(323 21% 16%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1020px;
+    margin: auto;
+    width: 100%;
+}
+
+body {
+    background-image: var(--background);
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--main-color);
+    font-size: 25px;
+    line-height: 250%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--title-color);
+}
+
+a {
+    text-decoration: none;
+    transition: .4s;
+    color: inherit;
+    cursor: pointer;
+}
+
+p {
+    text-indent: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+/* scroll*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(255,79,236,1) 35%, rgba(32,103,117,1) 75%);
+    border-radius: 10px;
+}
